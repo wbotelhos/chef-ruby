@@ -4,7 +4,7 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 maintainer       'Washington Botelho'
 maintainer_email 'wbotelhos@gmail.com'
 name             'chef-ruby'
-version          '0.1.0'
+version          '0.1.1'
 
 recipe 'chef-ruby::dependencies', 'Installs dependencies.'
 recipe 'chef-ruby::download',     'Downloads the source.'
