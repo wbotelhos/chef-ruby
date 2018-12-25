@@ -13,9 +13,9 @@ recipe 'chef-ruby::configure',    'Configures the source code.'
 recipe 'chef-ruby::compile',      'Compiles the source code.'
 recipe 'chef-ruby::links',        'Makes the necessary links to binaries.'
 
-issues_url 'https://github.com/wbotelhos/chef-ruby/issues'
-source_url 'https://github.com/wbotelhos/chef-ruby'
+issues_url 'https://github.com/wbotelhos/chef-ruby/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/wbotelhos/chef-ruby' if respond_to?(:source_url)
 
 supports 'ubuntu'
 
-chef_version '>= 11'
+chef_version '>= 11' if respond_to?(:chef_version)
